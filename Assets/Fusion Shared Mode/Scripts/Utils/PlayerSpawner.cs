@@ -8,7 +8,7 @@ namespace MaAvatar.Utils
 {
     public class PlayerSpawner : SimulationBehaviour, INetworkRunnerCallbacks
     {
-        [SerializeField] NetworkObject playerPrefab;
+        [SerializeField] GameObject playerPrefab;
 
         public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
         {

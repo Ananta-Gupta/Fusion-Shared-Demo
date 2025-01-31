@@ -59,6 +59,7 @@
         "GlobalsSize": 0
     },
     "AssembliesToWeave": [
+        "MaAvatar",
         "Fusion.Unity",
         "Assembly-CSharp",
         "Assembly-CSharp-firstpass",
