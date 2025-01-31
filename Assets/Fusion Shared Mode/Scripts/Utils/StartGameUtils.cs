@@ -18,12 +18,23 @@ namespace MaAvatar.Utils
 
         private void Awake()
         {
-            Instance = this;
+            if (Instance == null)
+                Instance = this;
+            else
+            {
+                if (Instance != this)
+                {
+                    Destroy(this.gameObject);
+                    return;
+                }
+            }
+            DontDestroyOnLoad(this.gameObject);
         }
 
-        private void Start()
+        private void OnDestroy()
         {
-
+            // Clears the global app settings to an empty string or "best region" when leaving the game.
+            PhotonAppSettings.Global.AppSettings.FixedRegion = string.Empty;
         }
 
         public static async void AddPlayer(string sceneToLoad, bool setRegionCode, string regionCode, System.Action OnFinishAction)

@@ -57,7 +57,7 @@ namespace MaAvatar
         void OnSceneLoaded()
         {
             //hide loading
-            rootObject.SetActive(false);
+            //rootObject.SetActive(false);
         }
     }
 }
