@@ -2,9 +2,9 @@
     "name": "MaAvatar",
     "rootNamespace": "MaAvatar",
     "references": [
-        "GUID:6f76dacea5835ca4496899cfe589e894",
-        "GUID:037d24eefa9b78e41bdcc0845b78ca7e",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:1baf1ffff1031e948b3b228ab3453251"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
